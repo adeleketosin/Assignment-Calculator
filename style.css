@@ -1,21 +1,25 @@
-*{
+body{
+    background-color: rgb(239, 235, 231);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 .container{
-    width: 40%;
-    height: 550px;
+    width: 36%;
+    height: 500px;
     background-color: rgb(233, 219, 194);
     margin: auto;
     border-radius: 6%;
     padding-top: 0.5%;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    box-shadow: 12px 12px 20px rgb(183, 143, 104);
+    background-image: url(background_image_3-HSbNez5tn--transformed.jpeg);
 }
 .inn-container{
-    height: 400px;
+    height: 350px;
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    transition: 6s;
 }
 .second-row{
     padding-bottom: 9rem;
@@ -33,37 +37,50 @@
      background-color: rgb(249, 238, 227);
      box-shadow: inset 5px 5px 8px rgb(183, 143, 104);
 }
+.inner-container img{
+    width: 30px;
+    height: 30px;
+    opacity: 0.9;
+}
 .btns{
-    width: 3.5rem;
-    height: 3.1rem;
-    border-radius: .5rem;
-    margin-top: 1rem;
-    margin-left: 2.2rem;
+    width: 3.2rem;
+    height: 3rem;
+    border-radius: .9rem;
+    margin-top: .4rem;
+    margin-left: 1.9rem;
     font-size: large;
     cursor: pointer;
     padding: 10px;
     border: none;
     box-shadow: inset -5px -5px 8px rgb(183, 143, 104);
-    /* transition: 1s; */
 }
-.btns.item1{
-    background-color: navajowhite;
-}
-.btns.item1:hover{
-    background-color: cornsilk;
-}
-.btns.item2{
-    background-color: navajowhite;
-}
-.btns.item2:hover{
-    background-color: rgb(177, 177, 177);
-}
-.item3{
+.item1{
     background-color: rgb(218, 193, 130);
 }
-.btns.item3:hover{
+.btns.item1:hover{
     background-color: lightgrey;
 }
+.btns.item2{
+    background-color:   rgb(199, 153, 83);
+}
+.btns.item2:hover{
+    background-color: rgb(148, 133, 111);
+} 
+.btns.item3:hover{
+    background-color: rgb(237, 211, 172);
+} 
+.btns.item4{
+    background-color: rgb(211, 200, 173);
+} 
+.btns.item4:hover{
+    background-color: rgba(187, 187, 187, 0.905);
+} 
+.btns.item5{
+    background-color: rgb(199, 153, 83);
+} 
+.btns.item5:hover{
+    background-color: rgba(187, 187, 187, 0.905);
+} 
 /* @media(1200px <= width <= 1500px){
     .container{
         width: 32%;
@@ -118,8 +135,8 @@
     .btns.item3:hover{
         background-color: lightgrey;
     }
-}
-@media(1100px <= width <= 1200px){
+} */
+/* @media(1100px <= width <= 1200px){
     .container{
         width: 30%;
         height: 480px;
