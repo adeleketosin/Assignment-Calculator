@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tosin Calculator</title>
+
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <input type="text" placeholder="0" id="display">
+            <!-- <textarea type="text" placeholder="0" id="display"></textarea> -->
+        </div>
+        <div class="inn-container">
+            <div class="row first-row">
+                
+                
+               
+            </div>
+            <div class="row">
+                <button class="btns item3" onclick="display.value = eval(Math.cos(display.value).toFixed(4))"
+                    target="#display">cos</button>
+                <button class="btns item3" onclick="display.value = eval(Math.sin(display.value).toFixed(4))"
+                    target="#display">Sin</button>
+                <button class="btns item3" onclick="display.value = eval(Math.tan(display.value).toFixed(4))"
+                    target="#display">tan</button>
+                <button class="btns item3" onclick="display.value = eval(Math.log(display.value).toFixed(4))"
+                    target="#display">log</button>
+                    <button class="btns" onclick="display.value += '00'" target="#display">root</button>
+            </div>
+            <link rel="stylesheet" href="style.css">
+
+            <div class="row">
+                <button class="btns item2" onclick="display.value = ''" target="#display">AC</button>
+                <button class="btns item2" onclick="display.value = eval(display.value / 100)"
+                    target="#display">%</button>
+                    <button class="btns" onclick="display.value += '0'" target="#display">(</button>
+                <button class="btns item1" onclick="display.value += '/'" target="#display">)</button>
+                <button class="btns item2" onclick="display.value = display.value.toString().slice(0,-1)">C</button>
+
+            </div>
+            <div class="row">
+                <button class="btns" onclick="display.value += '7'" target="#display">7</button>
+                <button class="btns" onclick="display.value += '8'" target="#display">8</button>
+                <button class="btns" onclick="display.value += '9'" target="#display">9</button>
+                <button class="btns item1" onclick="display.value += '*'" target="#display">X</button>       
+                <button class="btns item1" onclick="display.value = eval(display.value)" target="#display">/</button>
+            </div>
+            <div class="row">
+                <button class="btns" onclick="display.value += '4'" target="#display">4</button>
+                <button class="btns" onclick="display.value += '5'" target="#display">5</button>
+                <button class="btns" onclick="display.value += '6'" target="#display">6</button>
+                <button class="btns item1" onclick="display.value += '-'" target="#display">-</button>
+                <button class="btns item1" onclick="display.value = eval(display.value)" target="#display">pi</button>
+            </div>
+            <div class="row">
+                <button class="btns" onclick="display.value += '1'">1</button>
+                <button class="btns" onclick="display.value += '2'" target="#display">2</button>
+                <button class="btns" onclick="display.value += '3'" target="#display">3</button>
+                <button class="btns item1" onclick="display.value += '+'" target="#display">+</button>
+                <button class="btns item1" onclick="display.value = eval(display.value)" target="#display">x!</button>
+            </div>
+            <div class="row second-row">
+                <button class="btns" onclick="display.value += '00'" target="#display">00</button>
+                <button class="btns" onclick="display.value += '0'" target="#display">0</button>
+                <button class="btns" onclick="display.value += '.'" target="#display">.</button>
+                <button class="btns item1" onclick="display.value = eval(display.value)" target="#display">x^y</button>
+                <button class="btns item1" onclick="display.value = eval(display.value)" target="#display">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
